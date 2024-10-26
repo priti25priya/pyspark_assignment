@@ -1,7 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
-
 spark = SparkSession.builder.appName("get count").getOrCreate()
 schema1 = StructType([StructField("customer", StringType(), nullable=False),
                       StructField("product_model", StringType(), nullable=False)

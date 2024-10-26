@@ -3,7 +3,6 @@ from pyspark.sql.connect.session import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType
 from pyspark_assignment.src.Assignment1.util import only_product_iphone13, iphone13_to_iphone14, product_unique
 
-
 # Define the test case class
 class TestSparkFunctions(unittest.TestCase):
 

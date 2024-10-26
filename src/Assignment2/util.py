@@ -45,3 +45,7 @@ def add_masked_column(df: 'DataFrame') -> 'DataFrame':
     """
     mask_udf = udf(mask_credit_card, StringType())
     return df.withColumn("masked_card_number", mask_udf(df.card_number))
+
+
+def spark():
+    return None
